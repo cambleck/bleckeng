@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
 const keys = require("./config/keys");
+const compression = require("compression");
 const bodyParser = require("body-parser");
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
@@ -17,11 +18,11 @@ app.use(
   })
 );
 
+app.use(compression());
 
 app.use((req, res, next) => {
   next();
 });
-
 
 if (process.env.NODE_ENV === "production") {
   // Express will serve up production assets
