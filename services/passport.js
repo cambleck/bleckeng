@@ -1,6 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const mongoose = require("mongoose");
+const keys = require("../config/keys");
 
 const User = mongoose.model("User");
 
@@ -20,10 +21,7 @@ passport.use(
         return done(err);
       }
       if (!user) {
-        res.status(401);
-        res.end(info.message);
-
-        return;
+        return done(null, false, { message: "Incorrect username." });
       }
       if (!user || user.password !== password) {
         return done(null, false, { message: "Incorrect password." });
