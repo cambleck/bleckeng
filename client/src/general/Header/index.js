@@ -14,12 +14,12 @@ const Header = () => {
 
           <ul className="right">
             <li>
-              <Link to="/about" className="header-tab">
+              <Link to="/" className="header-tab black-text">
                 ABOUT
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="header-tab">
+              <Link to="/" className="header-tab black-text">
                 GALLERY
               </Link>
             </li>

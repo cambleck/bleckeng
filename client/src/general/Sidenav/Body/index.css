@@ -1,0 +1,11 @@
+.more-content {
+  top: 120px !important;
+}
+.body {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  bottom: 140px;
+  overflow-y: auto;
+  border-bottom: #323e48;
+}
