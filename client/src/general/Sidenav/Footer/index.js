@@ -11,20 +11,7 @@ const renderProfileCircle = () => {
 };
 
 const Footer = () => {
-  return (
-    <div className="footer">
-      <a
-        class="dropdown-trigger footer-button"
-        href="./"
-        data-target="dropdown1"
-      >
-        {renderProfileCircle()}
-        <div className="username font-400">cambleck</div>
-        <i className="material-icons">arrow_drop_down</i>
-      </a>
-      <AccountDropdown />
-    </div>
-  );
+  return <div className="footer">SOCIAL MEDIA</div>;
 };
 
 export default Footer;
