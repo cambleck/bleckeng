@@ -35,14 +35,14 @@
 }
 
 .sidenav-button {
-  font-weight: 500;
+  font-weight: bold;
   background: transparent;
   border: none;
 
   cursor: pointer;
   color: rgb(50, 62, 72);
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  font-size: 10px;
+
   padding: 5px 5px;
 }
 .sidenav-button:hover {
@@ -51,7 +51,7 @@
 }
 
 .sidenav {
-  width: 220px;
+  width: 200px;
   box-shadow: none;
   border-right: 3px solid rgba(50, 72, 72, 0.1);
 }
