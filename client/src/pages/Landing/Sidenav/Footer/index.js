@@ -1,6 +1,7 @@
 import React from "react";
 import AccountDropdown from "./AccountDropdown";
 import "./index.css";
+import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 const renderProfileCircle = () => {
   return (
@@ -11,7 +12,13 @@ const renderProfileCircle = () => {
 };
 
 const Footer = () => {
-  return <div className="footer">SOCIAL MEDIA</div>;
+  return (
+    <div className="footer">
+      <FaInstagram />
+      <FaFacebook />
+      <FaTwitter />
+    </div>
+  );
 };
 
 export default Footer;
