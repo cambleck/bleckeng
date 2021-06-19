@@ -2,14 +2,10 @@
 
 // Nav Options
 export const HOME = "HOME";
-export const EXPLORE = "EXPLORE";
-export const NOTIFICATIONS = "NOTIFICATIONS";
-export const ORDERS = "ORDERS";
-export const PROFILE = "PROFILE";
-export const INBOX = "INBOX";
-export const SETTINGS = "SETTINGS";
-
-// Library Pages
-export const VENDORS = "VENDORS";
-export const MARKETS = "MARKETS";
-export const PRODUCTS = "PRODUCTS";
+export const BIDDING = "BIDDING";
+export const CONTACT = "CONTACT";
+export const HISTORY = "HISTORY";
+export const PEOPLE = "PEOPLE";
+export const PROJECTS = "PROJECTS";
+export const RECENT = "RECENT";
+export const SERVICES = "SERVICES";
