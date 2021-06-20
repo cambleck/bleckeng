@@ -11,12 +11,12 @@ const Header = (onClick, display) => {
         src={logo}
         alt="logo"
         style={{
-          width: 140,
-          height: 40,
+          width: 150,
+          height: 50,
           margin: "10px 20px",
           marginTop: 15,
           cursor: "pointer",
-          paddingLeft: 10,
+          paddingLeft: 5,
         }}
       />
     </div>

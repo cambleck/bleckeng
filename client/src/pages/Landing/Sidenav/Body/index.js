@@ -1,11 +1,10 @@
 import React from "react";
 import _ from "lodash";
 import { Link } from "react-router-dom";
-import { menuList } from "./itemsList";
+import { menuList, socialList } from "./itemsList";
 import "./index.css";
 
 const MenuList = ({ list, onClick, display }) => {
-  console.log(display);
   return _.map(list, ({ icon, label, pageType }) => {
     return (
       <Link
@@ -44,7 +43,9 @@ const renderImage = ({ type, image }) => {
 const Body = ({ onClick, display }) => {
   return (
     <div className="body">
-      <MenuList list={menuList} onClick={onClick} display={display} />
+      <div style={{ marginTop: 10 }}>
+        <MenuList list={menuList} onClick={onClick} display={display} />
+      </div>
     </div>
   );
 };
