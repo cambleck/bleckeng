@@ -2,7 +2,7 @@ html,
 body,
 #app {
   color: black;
-  background-color: #8b2d22;
+  background-color: #ffffff;
   font-weight: 350;
   font-family: "Verdana", "", Calibri, sans-serif;
   display: flex;
@@ -14,10 +14,16 @@ main {
   flex: 1 0 auto;
 }
 
+header {
+  display: none;
+}
+
+.page-footer {
+  display: none;
+}
+
 .nav {
   height: 100px;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -45,6 +51,10 @@ main {
   flex-direction: column;
 }
 
+.sidenav-trigger {
+  .margin-top: 50px !important;
+}
+
 header,
 main,
 footer {
@@ -52,9 +62,16 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-  header,
+  header {
+    display: inline-block;
+  }
+  ,
   main,
   footer {
     padding-left: 0;
+  }
+
+  .page-footer {
+    display: inline-block;
   }
 }
