@@ -8,14 +8,12 @@ const Header = () => {
     <header>
       <div className="header-stripe"></div>
       <nav className="nav white">
-        <div className="nav-wrapper">
-          <Link to="/" className="pointer brand-logo center">
-            <img src={logo} alt="Bleck Engineering Logo" className="logo" />
-          </Link>
-          <a href="#" data-target="slide-out" className="sidenav-trigger">
-            <FiMenu color="black" size={21} />
-          </a>
-        </div>
+        <Link to="/" className="pointer brand-logo center flex-center">
+          <img src={logo} alt="Bleck Engineering Logo" className="logo" />
+        </Link>
+        <a href="#" data-target="slide-out" className="sidenav-trigger">
+          <FiMenu color="black" size={21} />
+        </a>
       </nav>
     </header>
   );

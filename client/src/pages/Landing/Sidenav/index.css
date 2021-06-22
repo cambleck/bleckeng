@@ -22,16 +22,8 @@
   border-radius: 50px;
 }
 
-.profile-circle {
-  border-radius: 50%;
-  border: 2px solid #323e48;
-  box-shadow: 0px 0px 3px #323e48;
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sidenav-body {
+  margin-top: 10px;
 }
 
 .sidenav-button {
@@ -63,4 +55,42 @@
 
 .sidenav {
   opacity: 1;
+}
+
+.sidenav-logo {
+  width: 150px;
+  height: 50px;
+  margin: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.sidenav-cancel {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidenav {
+    width: 100%;
+  }
+  .sidenav-button {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .sidenav-logo {
+    width: 225px;
+    height: 75px;
+  }
+
+  .sidenav-cancel {
+    display: inline-block;
+  }
+
+  .sidenav-body {
+    margin-top: 30px;
+  }
 }

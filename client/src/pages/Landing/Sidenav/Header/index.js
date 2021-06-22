@@ -5,20 +5,14 @@ const Header = (onClick, display) => {
   return (
     <div
       className="header"
-      style={{ display: "flex", alignItems: "center", paddingTop: 10 }}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        paddingTop: 10,
+        justifyContent: "center",
+      }}
     >
-      <img
-        src={logo}
-        alt="logo"
-        style={{
-          width: 150,
-          height: 50,
-          margin: "10px 20px",
-          marginTop: 15,
-          cursor: "pointer",
-          paddingLeft: 5,
-        }}
-      />
+      <img src={logo} alt="logo" className="sidenav-logo" />
     </div>
   );
 };

@@ -25,27 +25,10 @@ const MenuList = ({ list, onClick, display }) => {
   });
 };
 
-const renderImage = ({ type, image }) => {
-  return (
-    <img
-      src={image}
-      alt="img"
-      style={{
-        width: 25,
-        height: 25,
-        borderRadius: type === "account" ? "50%" : 5,
-        marginRight: 7,
-      }}
-    />
-  );
-};
-
 const Body = ({ onClick, display }) => {
   return (
-    <div className="body">
-      <div style={{ marginTop: 10 }}>
-        <MenuList list={menuList} onClick={onClick} display={display} />
-      </div>
+    <div className="sidenav-body">
+      <MenuList list={menuList} onClick={onClick} display={display} />
     </div>
   );
 };
