@@ -42,8 +42,9 @@ const Footer = () => {
         style={{
           fontSize: 10,
           letterSpacing: 0,
-          margin: 20,
+          margin: 10,
           textAlign: "center",
+          marginBottom: 20,
         }}
       >
         © 2021 Bleck Engineering Company, Inc.
