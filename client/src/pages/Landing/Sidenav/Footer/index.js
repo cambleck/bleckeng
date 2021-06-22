@@ -1,7 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import AccountDropdown from "./AccountDropdown";
-import "./index.css";
+
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import { socialList } from "../Body/itemsList";
 

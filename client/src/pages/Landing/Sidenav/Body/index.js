@@ -13,7 +13,6 @@ const MenuList = ({ list, onClick, display }) => {
           display: "flex",
           alignItems: "center",
           color: display === pageType && "#00B797",
-          paddingLeft: 35,
         }}
         to={`/${pageType.toLowerCase()}`}
         key={label}
@@ -27,7 +26,7 @@ const MenuList = ({ list, onClick, display }) => {
 
 const Body = ({ onClick, display }) => {
   return (
-    <div className="sidenav-body">
+    <div className="sidenav-body body">
       <MenuList list={menuList} onClick={onClick} display={display} />
     </div>
   );

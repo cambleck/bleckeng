@@ -1,11 +1,15 @@
-.header {
+.sidenav-header {
   height: 80px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer {
   width: 100%;
   position: absolute;
-  bottom: 70px;
+  bottom: 20px;
+  height: 150px;
 }
 .footer-button {
   display: flex;
@@ -36,6 +40,7 @@
   font-size: 12px;
 
   padding: 5px 25px;
+  padding-left: 35px;
   height: 35px;
 }
 .sidenav-button:hover {
@@ -77,13 +82,15 @@
   .sidenav-button {
     display: flex;
     justify-content: center;
-    font-size: 18px;
-    height: 50px;
+    font-size: 20px;
+    height: 60px;
+    padding: 0px;
   }
 
   .sidenav-logo {
     width: 225px;
     height: 75px;
+    margin-top: 40px;
   }
 
   .sidenav-cancel {
@@ -91,6 +98,6 @@
   }
 
   .sidenav-body {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
