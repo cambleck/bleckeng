@@ -18,6 +18,7 @@ class Sidenav extends React.Component {
         className="sidenav sidenav-fixed sidenav-background font-secondary "
       >
         <Header />
+
         <Body onClick={onClick} display={display} />
 
         <Footer />

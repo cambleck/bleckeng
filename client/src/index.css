@@ -70,6 +70,10 @@ footer {
   padding-left: 200px;
 }
 
+.content {
+  padding-left: 220px;
+}
+
 @media only screen and (max-width: 992px) {
   header {
     display: inline-block;
@@ -82,5 +86,13 @@ footer {
 
   .page-footer {
     display: inline-block;
+  }
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+  .content {
+    padding-left: 0;
   }
 }

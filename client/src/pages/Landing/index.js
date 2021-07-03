@@ -20,7 +20,7 @@ class Landing extends Component {
           onClick={(display) => this.changeDisplay(display)}
           display={display}
         />
-        <div className="main myContainer">
+        <div className="main page-container">
           <Display display={display} />
         </div>
       </div>
