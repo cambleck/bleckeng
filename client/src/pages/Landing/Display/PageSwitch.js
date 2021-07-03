@@ -10,6 +10,7 @@ import Contact from "../Contact";
 import Bidding from "../Bidding";
 import Recent from "../Recent";
 import {
+  HOME,
   BIDDING,
   CONTACT,
   HISTORY,
@@ -21,6 +22,8 @@ import {
 
 const PageSwitch = ({ display }) => {
   switch (display) {
+    case HOME:
+      return <Home />;
     case HISTORY:
       return <History />;
     case SERVICES:

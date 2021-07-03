@@ -21,12 +21,7 @@ const FourZeroFour = loadable(() => import("./404"));
 export const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Landing} />
-      <Route
-        exaxt
-        path="/history"
-        component={() => <Landing display={HISTORY} />}
-      />
+      <Route exaxt path="/" component={() => <Landing display={HOME} />} />
       <Route exact path="/login" component={Admin} />
       <Route component={FourZeroFour} />
     </Switch>
