@@ -24,7 +24,7 @@ const PageSwitch = ({ display }) => {
   switch (display) {
     case HOME:
       return <Home />;
-    case HISTORY:
+    case "HISTORY":
       return <History />;
     case SERVICES:
       return <Services />;

@@ -1,20 +1,22 @@
 import React from "react";
-import logo from "../../logo.webp";
+import logo from "../../../logo.webp";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
+import Nav from "./Nav";
 
-const Header = () => {
+const Header = ({ onClick, display }) => {
   return (
     <header>
       <div className="header-stripe"></div>
-      <nav className="nav white">
-        <Link to="/" className="pointer brand-logo center flex-center">
+      <div className="header white">
+        <Link to="/" className="pointer flex-center">
           <img src={logo} alt="Bleck Engineering Logo" className="logo" />
         </Link>
-        <a href="#" data-target="slide-out" className="sidenav-trigger">
+        <Nav onClick={onClick} display={display} />
+        <a href="#" data-target="slide-out" className="sidenav-trigger menu">
           <FiMenu color="black" size={21} />
         </a>
-      </nav>
+      </div>
     </header>
   );
 };

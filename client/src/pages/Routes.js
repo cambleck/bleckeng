@@ -14,14 +14,38 @@ import {
 
 const Landing = loadable(() => import("./Landing"));
 const Admin = loadable(() => import("./_Admin"));
-const History = loadable(() => import("./Landing/History"));
 
 const FourZeroFour = loadable(() => import("./404"));
 
 export const Routes = () => {
   return (
     <Switch>
-      <Route exaxt path="/" component={() => <Landing display={HOME} />} />
+      <Route exact path="/" component={() => <Landing display={HOME} />} />
+      <Route
+        exact
+        path="/history"
+        component={() => <Landing display={HISTORY} />}
+      />
+      <Route
+        exact
+        path="/services"
+        component={() => <Landing display={SERVICES} />}
+      />
+      <Route
+        exact
+        path="/projects"
+        component={() => <Landing display={PROJECTS} />}
+      />
+      <Route
+        exact
+        path="/people"
+        component={() => <Landing display={PEOPLE} />}
+      />
+      <Route
+        exact
+        path="/contact"
+        component={() => <Landing display={CONTACT} />}
+      />
       <Route exact path="/login" component={Admin} />
       <Route component={FourZeroFour} />
     </Switch>

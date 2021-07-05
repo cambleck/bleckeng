@@ -10,12 +10,23 @@ body,
   flex-direction: column;
 }
 
+.nav {
+  display: inline-block;
+}
+
 main {
   flex: 1 0 auto;
 }
 
 header {
   display: none;
+  width: 100vw;
+}
+
+.header-stripe {
+  background: #8b2d22;
+  height: 10px;
+  width: 100%;
 }
 
 .page-footer {
@@ -25,17 +36,26 @@ header {
   font-size: 12px;
 }
 
-.nav {
-  height: 100px;
+.active {
+  background: transparent !important;
+}
+
+.header {
+  height: 110px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px;
+  justify-content: space-between;
+  box-shadow: none;
+  border-bottom: 1px solid (150, 150, 150);
+  position: relative;
 }
 
 .logo {
-  width: 200px;
-
+  width: 180px;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  margin-right: 20px;
   margin-top: 15px;
 }
 
@@ -75,6 +95,26 @@ header {
   cursor: pointer;
 }
 
+.nav-tab {
+  color: #8b2d22 !important;
+  background: transparent;
+  font-weight: 600;
+  font-size: 12px !important;
+  height: 50px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  justify-content: flex-start;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.nav-tab:active {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+}
+
 .contact-button {
   width: 100px;
   height: 40px;
@@ -87,35 +127,25 @@ header {
   margin-top: 50px;
 }
 
-header,
-main,
-footer {
-  padding-left: 200px;
+header {
+  display: inline-block;
 }
 
-.content {
-  padding-left: 220px;
+.page-footer {
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+  margin-right: 50px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 992px) {
-  header {
+  .nav {
+    display: none;
+  }
+  .menu {
     display: inline-block;
-  }
-  ,
-  main,
-  footer {
-    padding-left: 0;
-  }
-
-  .page-footer {
-    display: inline-block;
-  }
-  header,
-  main,
-  footer {
-    padding-left: 0;
-  }
-  .content {
-    padding-left: 0;
   }
 }

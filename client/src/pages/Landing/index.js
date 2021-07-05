@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Display from "./Display";
-import Sidenav from "./Sidenav/";
+import Header from "./Header/";
 
 class Landing extends Component {
   state = {
@@ -16,11 +16,11 @@ class Landing extends Component {
 
     return (
       <div>
-        <Sidenav
+        <Header
           onClick={(display) => this.changeDisplay(display)}
           display={display}
         />
-        <div className="main page-container">
+        <div className="mainpage-container">
           <Display display={display} />
         </div>
       </div>
