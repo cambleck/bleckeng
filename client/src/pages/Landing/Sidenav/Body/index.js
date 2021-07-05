@@ -12,13 +12,12 @@ const MenuList = ({ list, onClick, display }) => {
         style={{
           display: "flex",
           alignItems: "center",
-          color: display === pageType && "#00B797",
         }}
         to={`/${pageType.toLowerCase()}`}
         key={label}
         onClick={() => onClick(pageType ? pageType : "")}
       >
-        {pageType}
+        {display === pageType && "➤"} {pageType}
       </Link>
     );
   });

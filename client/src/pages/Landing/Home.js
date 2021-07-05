@@ -11,7 +11,7 @@ const Home = () => {
         height: "100vh",
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
-        flexDirection: "column",
+
         position: "relative",
 
         alignItems: "center",
@@ -19,20 +19,25 @@ const Home = () => {
         color: "white",
       }}
     >
+      <button
+        className="clear-button transparent"
+        style={{ marginLeft: -50, borderRadius: "5px 0px 0px 5px " }}
+      >
+        <FaAngleLeft size={30} />
+      </button>
       <div
         style={{
-          border: "2px solid rgb(200,200,200)",
           width: "75%",
           height: "75%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          borderRadius: 3,
+          borderRadius: 5,
           fontWeight: "bold",
-          textShadow: "0px 0px 20px black",
-          fontSize: 24,
-
-          boxShadow: "0px 0px 20px gray",
+          textShadow: "0px 0px 10px black",
+          fontSize: 28,
+          background: "rgba(0,0,10,.5)",
+          boxShadow: "0px 0px 8px black",
           textAlign: "center",
           position: "relative",
         }}
@@ -42,12 +47,9 @@ const Home = () => {
             display: "flex",
             alignItems: "center",
             width: "100%",
-            justifyContent: "space-between",
+            justifyContent: "center",
           }}
         >
-          <button className="clear-button" style={{ marginLeft: -40 }}>
-            <FaAngleLeft />
-          </button>
           <div style={{ margin: 20 }}>
             <div style={{ marginBottom: 10, marginTop: -20 }}>
               BLECK ENGINEERING
@@ -57,9 +59,6 @@ const Home = () => {
             </div>
             <button className="contact-button">CONTACT</button>
           </div>
-          <button className="clear-button" style={{ marginRight: -40 }}>
-            <FaAngleRight />
-          </button>
         </div>
         <div style={{ display: "flex", position: "absolute", bottom: 20 }}>
           <div>●</div>
@@ -68,6 +67,12 @@ const Home = () => {
           <div>◦</div>
         </div>
       </div>
+      <button
+        className="clear-button transparent"
+        style={{ marginRight: -50, borderRadius: "0px 5px 5px 0px " }}
+      >
+        <FaAngleRight size={30} />
+      </button>
     </div>
   );
 };
