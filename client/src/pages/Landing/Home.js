@@ -1,6 +1,27 @@
 import React from "react";
-import image from "../../images/beach.jpeg";
+import _ from "lodash";
+import image from "../../images/lfh.jpeg";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { socialList } from "./Sidenav/Body/itemsList";
+
+const SocialList = ({ list }) => {
+  return _.map(list, ({ icon, href, label }) => {
+    return (
+      <a
+        className="flex-center"
+        style={{
+          color: "white",
+          margin: 8,
+          cursor: "pointer",
+        }}
+        to={href}
+        key={label}
+      >
+        {icon}
+      </a>
+    );
+  });
+};
 
 const Home = () => {
   return (
@@ -35,7 +56,7 @@ const Home = () => {
           borderRadius: 5,
           fontWeight: "bold",
           textShadow: "0px 0px 10px black",
-          fontSize: 28,
+          fontSize: 40,
           background: "rgba(0,0,10,.5)",
           boxShadow: "0px 0px 8px black",
           textAlign: "center",
@@ -50,16 +71,34 @@ const Home = () => {
             justifyContent: "center",
           }}
         >
-          <div style={{ margin: 20 }}>
-            <div style={{ marginBottom: 10, marginTop: -20 }}>
-              BLECK ENGINEERING
+          <div className="flex-center column" style={{ margin: 20 }}>
+            <div style={{ marginBottom: 10 }}>
+              BLECK ENGINEERING{" "}
+              <div
+                style={{
+                  height: 1,
+                  width: "100%",
+                  background: "white",
+                  marginBottom: 10,
+                }}
+              ></div>
             </div>
+
             <div style={{ fontSize: 16, fontWeight: "normal" }}>
               Providing context sensitive solutions since 1945
             </div>
             <button className="contact-button">CONTACT</button>
+            <div
+              style={{
+                display: "flex",
+                marginTop: 20,
+              }}
+            >
+              <SocialList list={socialList} />
+            </div>
           </div>
         </div>
+
         <div style={{ display: "flex", position: "absolute", bottom: 20 }}>
           <div>●</div>
           <div>◦</div>
