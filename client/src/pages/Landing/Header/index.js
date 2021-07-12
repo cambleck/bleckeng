@@ -14,7 +14,7 @@ const Header = ({ onClick, display }) => {
         </Link>
         <Nav onClick={onClick} display={display} />
         <a href="#" data-target="slide-out" className="sidenav-trigger menu">
-          <FiMenu color="black" size={21} />
+          <FiMenu color="#8b2d22" size={30} />
         </a>
       </div>
     </header>
